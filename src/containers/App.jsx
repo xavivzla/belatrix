@@ -22,6 +22,9 @@ const App = () => {
 
   function calculate(from = 'EUR', to = 'USD', value) {
     getCurrentDivisa(from)
+    .then((data) => {
+      setDivisa(data.rates.USD)
+    })
     let result = value * divisa
     result = result.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     // if(isNaN(result)){
