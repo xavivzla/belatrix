@@ -1,0 +1,49 @@
+@import '../core//declare-fonts';
+
+.header{
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 20px;
+  &__logo{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: $PrimaryBold;
+    font-size: 36px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
+    svg{
+      width: 70px;
+    }
+  }
+  &__list{
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  &__item{
+    padding: 5px 10px;
+  }
+  &__link{
+    color: #fff;
+    font-family: $PrimaryBold;
+    font-size: 20px;
+  }
+  &.active{
+    padding: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.26);
+    transition: all .2s ease-in;
+    .header__logo{
+      font-size: 26px;
+      color: #11934B;
+    }
+    .header__link{
+      color: #666;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../core//declare-fonts';
+
+.message{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 4px 50px;
+  border-radius: 0px;
+  font-size: 20px;
+  text-align: center;
+  font-family: $PrimaryRegular;
+  box-shadow: 1px 1px 19px 1px rgba(0, 0, 0, 0.363);
+  z-index: 20;
+  &-error{
+    background: rgb(228, 77, 77);
+    color: #fff;
+  }
+}
