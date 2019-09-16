@@ -1,4 +1,5 @@
 @import '../core//declare-fonts';
+@import '../core//breakpoints';
 
 .header{
   background: transparent;
@@ -43,7 +44,10 @@
     }
     .header__link{
       color: #666;
-      font-size: 18px;
+      font-size: 13px;
+      @include desde(m){
+        font-size: 18px;
+      }
     }
   }
 }
